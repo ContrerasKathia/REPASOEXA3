@@ -35,9 +35,17 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="include/AUTENTICACION.h" />
+		<Unit filename="include/Bitacora.h" />
+		<Unit filename="include/Entrenador.h" />
+		<Unit filename="include/Equipo.h" />
+		<Unit filename="include/Pais.h" />
 		<Unit filename="include/Usuarios.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/AUTENTICACION.cpp" />
+		<Unit filename="src/Bitacora.cpp" />
+		<Unit filename="src/Entrenador.cpp" />
+		<Unit filename="src/Equipo.cpp" />
+		<Unit filename="src/Pais.cpp" />
 		<Unit filename="src/Usuarios.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />

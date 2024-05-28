@@ -6,7 +6,7 @@
 #include<conio.h>
 #include<iomanip>
 #include"Usuarios.h"
-//#include "Bitacora.h"
+#include "Bitacora.h"
 
 
 using namespace std;
@@ -93,7 +93,7 @@ bool AUTENTICACION::VerificarUsuario()
         return false;
     }
     string codigoPrograma="1000";
-    //Bitacora Auditoria;
+    Bitacora Auditoria;
 
     //busca el usuario en el archivo---------------------------------
 
@@ -102,8 +102,17 @@ bool AUTENTICACION::VerificarUsuario()
 
        if (usuario==usuario1.usu && contrasena==usuario1.contra)
         {
-            //Auditoria.ingresoBitacora(user,codigoPrograma,"LGI");
+            Auditoria.ingresoBitacora(usuario1.usu,codigoPrograma,"LGI");
             encontrado=true;
+
+            //arregla bitacora-----------------------------------------
+            fstream file;
+            file.open("bitaA.txt", ios::app | ios::out);
+            //file <<std::left<<std::setw(15)<< user << "\n";
+            file << std::left<<usuario1.usu<<"\n";
+            file.close();
+            //-----------------------------------------------------------
+
             break;
         }
     }

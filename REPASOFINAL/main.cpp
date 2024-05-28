@@ -1,11 +1,16 @@
 #include <iostream>
 #include "AUTENTICACION.h"
 #include "Usuarios.h"
+#include "Pais.h"
+#include "Entrenador.h"
+#include "Bitacora.h"
+#include "Equipo.h"
 
-//#include "Bitacora.h"
 
 void menuGeneral();
 void catalogos();
+string codigoPrograma="1";
+Bitacora Auditoria;
 string user, contrasena;
 
 using namespace std;
@@ -25,6 +30,32 @@ int main()
 }
 void menuGeneral()
 {
+    string codigoPrograma="4001";
+    Bitacora Auditoria;
+//---------------Trae usuario --------------------------
+    Usuario usuario1;
+    fstream file;
+    int total=0;
+    file.open("bitaA.txt",ios::in);
+    if(!file)
+	{
+		cout<<"\n\t\t\tNo hay usuarios registrados...";
+		file.close();
+	}
+	else
+	{
+		file >> usuario1.usu;
+		while(!file.eof())
+		{
+			total++;
+			file >> usuario1.usu;
+		}
+		if(total==0)
+		{
+			cout<<"\n\t\t\tNo hay usuarios...";
+		}
+	}
+	file.close();
     int choice;
 
 
@@ -56,7 +87,7 @@ void menuGeneral()
             //reportes();
             break;
         case 4:
-                //Auditoria.ingresoBitacora(user,codigoPrograma,"LGO"); //llamada para registrar la bitacora de seguridad
+                Auditoria.ingresoBitacora(usuario1.usu,codigoPrograma,"LGO"); //llamada para registrar la bitacora de seguridad
             exit(0);
         default:
             cout << "\n\t\t\t Opcion invalida...Por favor prueba otra vez..";
@@ -100,22 +131,25 @@ void catalogos()
             break;
         case 2:
         {
-
+            PaisCrud pais1;
+            pais1.Crud();
         }
             break;
         case 3:
         {
-
+            EntrenadorCrud entrena;
+            entrena.Crud();
             break;
         }
         case 4:
-            // Implementación para Carreras
+
             break;
         case 5:
-            // Implementación para Facultades
+            EquipoCrud equipo;
+            equipo.Crud();
             break;
         case 6:
-            // Implementación para Cursos
+
             break;
         case 7:
             menuGeneral();

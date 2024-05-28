@@ -6,11 +6,38 @@
 #include<iostream>
 #define USER "usuario"
 #define PASS "1234"
+#include "Bitacora.h"
 
 using namespace std;
 
 
 void Usuarios::menuUsuarios(){
+     string codigoPrograma="4001";
+    Bitacora Auditoria;
+//---------------Trae usuario --------------------------
+    Usuario usuario1;
+    fstream file;
+    int total=0;
+    file.open("bitaA.txt",ios::in);
+    if(!file)
+	{
+		cout<<"\n\t\t\tNo hay usuarios registrados...";
+		file.close();
+	}
+	else
+	{
+		file >> usuario1.usu;
+		while(!file.eof())
+		{
+			total++;
+			file >> usuario1.usu;
+		}
+		if(total==0)
+		{
+			cout<<"\n\t\t\tNo hay usuarios...";
+		}
+	}
+	file.close();
 
 int choice;
     do {
@@ -36,18 +63,22 @@ int choice;
     	do
     	{
     		insertar();
+    		Auditoria.ingresoBitacora(usuario1.usu,codigoPrograma,"IUS"); //CJO = Create Jornada
     		cout<<"\n\t\t\t Agrega otra persona(s,n): ";
     		cin>>x;
 		}while(x=='s'||x=='S');
 		break;
 	case 2:
 		desplegar();
+		Auditoria.ingresoBitacora(usuario1.usu,codigoPrograma,"DUS"); //CJO = Create Jornada
 		break;
 	case 3:
 		modificar();
+		Auditoria.ingresoBitacora(usuario1.usu,codigoPrograma,"MUS"); //CJO = Create Jornada
 		break;
 	case 4:
 		borrar();
+		Auditoria.ingresoBitacora(usuario1.usu,codigoPrograma,"BUS"); //CJO = Create Jornada
 		break;
 	case 5:
 		break;

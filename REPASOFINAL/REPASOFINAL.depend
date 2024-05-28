@@ -29,3 +29,104 @@
 1716850399 c:\users\cluba\onedrive\documents\kat ing\semetre3\progra\progra1\final progra\repasofinal\include\usuarios.h
 	<iostream>
 
+1716935623 source:c:\users\cluba\onedrive\documents\kat ing\semetre3\progra\progra1\final progra\repasoexa3\repasofinal\src\autenticacion.cpp
+	"AUTENTICACION.h"
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Usuarios.h"
+	"Bitacora.h"
+
+1716849362 c:\users\cluba\onedrive\documents\kat ing\semetre3\progra\progra1\final progra\repasoexa3\repasofinal\include\autenticacion.h
+	<iostream>
+	<fstream>
+	<string>
+
+1716850399 c:\users\cluba\onedrive\documents\kat ing\semetre3\progra\progra1\final progra\repasoexa3\repasofinal\include\usuarios.h
+	<iostream>
+
+1716936860 source:c:\users\cluba\onedrive\documents\kat ing\semetre3\progra\progra1\final progra\repasoexa3\repasofinal\main.cpp
+	<iostream>
+	"AUTENTICACION.h"
+	"Usuarios.h"
+	"Pais.h"
+	"Entrenador.h"
+	"Bitacora.h"
+
+1716871986 source:c:\users\cluba\onedrive\documents\kat ing\semetre3\progra\progra1\final progra\repasoexa3\repasofinal\src\bitacora.cpp
+	"Bitacora.h"
+	<iostream>
+	<fstream>
+	<conio.h>
+	<ctime>
+	<stdlib.h>
+	<iomanip>
+
+1716871986 c:\users\cluba\onedrive\documents\kat ing\semetre3\progra\progra1\final progra\repasoexa3\repasofinal\include\bitacora.h
+	<iostream>
+
+1716936207 source:c:\users\cluba\onedrive\documents\kat ing\semetre3\progra\progra1\final progra\repasoexa3\repasofinal\src\usuarios.cpp
+	"Usuarios.h"
+	<fstream>
+	<cstdlib>
+	<conio.h>
+	<iostream>
+	"Bitacora.h"
+
+1716936504 source:c:\users\cluba\onedrive\documents\kat ing\semetre3\progra\progra1\final progra\repasoexa3\repasofinal\src\pais.cpp
+	"Pais.h"
+	"usuarios.h"
+	"AUTENTICACION.h"
+	"Bitacora.h"
+	<fstream>
+	<iostream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1716871668 c:\users\cluba\onedrive\documents\kat ing\semetre3\progra\progra1\final progra\repasoexa3\repasofinal\include\pais.h
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1716936504 source:c:\users\cluba\onedrive\documents\kat ing\semetre3\progra\progra1\final progra\repasoexa3\repasofinal\src\entrenador.cpp
+	"Entrenador.h"
+	"usuarios.h"
+	"AUTENTICACION.h"
+	"Bitacora.h"
+	<fstream>
+	<iostream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1716874214 c:\users\cluba\onedrive\documents\kat ing\semetre3\progra\progra1\final progra\repasoexa3\repasofinal\include\entrenador.h
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1716936504 source:c:\users\cluba\onedrive\documents\kat ing\semetre3\progra\progra1\final progra\repasoexa3\repasofinal\src\equipo.cpp
+	"Equipo.h"
+	"usuarios.h"
+	"AUTENTICACION.h"
+	"Bitacora.h"
+	<fstream>
+	<iostream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1716875642 c:\users\cluba\onedrive\documents\kat ing\semetre3\progra\progra1\final progra\repasoexa3\repasofinal\include\equipo.h
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
