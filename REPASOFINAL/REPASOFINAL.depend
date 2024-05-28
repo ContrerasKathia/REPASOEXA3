@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1716850583 source:c:\users\cluba\onedrive\documents\kat ing\semetre3\progra\progra1\final progra\repasofinal\main.cpp
+	<iostream>
+	"AUTENTICACION.h"
+	"Usuarios.h"
+
+1716849362 c:\users\cluba\onedrive\documents\kat ing\semetre3\progra\progra1\final progra\repasofinal\include\autenticacion.h
+	<iostream>
+	<fstream>
+	<string>
+
+1716851242 source:c:\users\cluba\onedrive\documents\kat ing\semetre3\progra\progra1\final progra\repasofinal\src\autenticacion.cpp
+	"AUTENTICACION.h"
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Usuarios.h"
+
+1716850399 source:c:\users\cluba\onedrive\documents\kat ing\semetre3\progra\progra1\final progra\repasofinal\src\usuarios.cpp
+	"Usuarios.h"
+	<fstream>
+	<cstdlib>
+	<conio.h>
+	<iostream>
+
+1716850399 c:\users\cluba\onedrive\documents\kat ing\semetre3\progra\progra1\final progra\repasofinal\include\usuarios.h
+	<iostream>
+
